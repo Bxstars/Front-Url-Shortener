@@ -24,14 +24,15 @@ class App extends React.Component {
   onCreateLink(link) {
     const { links } = this.state;
     links.push(link);
-    this.setState({ links: this.state.links });
+    this.setState({ links });
   }
 
   render() {
+    const { links } = this.state;
     return (
       <div className="App">
         <NewLink onCreateLink={this.onCreateLink} />
-        <ListLinks links={this.state.links} />
+        <ListLinks links={links} />
       </div>
     );
   }
