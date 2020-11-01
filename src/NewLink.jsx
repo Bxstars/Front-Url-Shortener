@@ -38,7 +38,7 @@ class NewLink extends React.Component {
     return (
       <form>
         <label htmlFor="url">
-          Crie seu link
+          <h1>Crie seu link ;)</h1>
           <input
             type="text"
             id="url"
@@ -48,7 +48,7 @@ class NewLink extends React.Component {
           />
         </label>
         <p>{url}</p>
-        <button onClick={this.onClick} type="button">Criar Link</button>
+        <button onClick={this.onClick} type="button"><strong>Create</strong></button>
       </form>
     );
   }
