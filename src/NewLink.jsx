@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
@@ -30,6 +31,9 @@ class NewLink extends React.Component {
         const { onCreateLink } = this.props;
         console.log(response.data);
         onCreateLink(response.data);
+        this.setState({
+          url:'' ,
+        });
       });
   }
 
